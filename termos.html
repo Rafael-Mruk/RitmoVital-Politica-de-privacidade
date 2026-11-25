@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidade e Termos de Uso — RitmoVital</title>
+  <meta name="description" content="Política de Privacidade, Proteção de Dados (LGPD) e Termos de Uso do aplicativo RitmoVital - Controle de Remédios (RBcodex)." />
+  <meta name="robots" content="index, follow" />
+  <style>
+    :root {
+      --primary: #00897B;
+      --primary-dark: #00695C;
+      --primary-soft: #E0F2F1;
+      --bg: #F4F7F6;
+      --card: #FFFFFF;
+      --text: #1E293B;
+      --muted: #475569;
+      --border: #E2E8F0;
+      --danger-bg: #FEF2F2;
+      --danger-border: #FECACA;
+      --danger-text: #991B1B;
+      --info-bg: #EFF6FF;
+      --info-border: #BFDBFE;
+      --info-text: #1E40AF;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #26A69A;
+        --primary-dark: #80CBC4;
+        --primary-soft: rgba(38, 166, 154, 0.15);
+        --bg: #0F172A;
+        --card: #1E293B;
+        --text: #F1F5F9;
+        --muted: #CBD5E1;
+        --border: #334155;
+        --danger-bg: rgba(220, 38, 38, 0.14);
+        --danger-border: rgba(248, 113, 113, 0.35);
+        --danger-text: #FCA5A5;
+        --info-bg: rgba(59, 130, 246, 0.14);
+        --info-border: rgba(96, 165, 250, 0.35);
+        --info-text: #93C5FD;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, #00897B 0%, #004D40 100%);
+      color: #FFFFFF;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+
+    .header-inner {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .doc-switcher {
+      display: inline-flex;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .doc-switcher a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 999px;
+      opacity: 0.85;
+    }
+
+    .doc-switcher a.active {
+      background: #FFFFFF;
+      color: #004D40;
+      opacity: 1;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: #FFFFFF;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+      letter-spacing: 0.3px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(1.75rem, 4vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 680px;
+      font-size: 1rem;
+      opacity: 0.92;
+    }
+
+    .meta-bar {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 24px;
+      font-size: 0.88rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 880px;
+      margin: -22px auto 56px;
+      padding: 0 16px;
+    }
+
+    .quick-nav {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 22px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      margin-bottom: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quick-nav a {
+      text-decoration: none;
+      color: var(--primary-dark);
+      background: var(--primary-soft);
+      padding: 7px 14px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 600;
+      transition: opacity 0.15s ease;
+    }
+
+    .quick-nav a:hover {
+      opacity: 0.82;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px 28px;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px 18px;
+      }
+    }
+
+    .card h2 {
+      margin: 0 0 14px;
+      font-size: 1.22rem;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card p {
+      margin: 0 0 12px;
+      color: var(--muted);
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul {
+      margin: 8px 0 14px;
+      padding-left: 22px;
+      color: var(--muted);
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .alert-danger {
+      background: var(--danger-bg);
+      border: 1px solid var(--danger-border);
+      color: var(--danger-text);
+      padding: 16px 18px;
+      border-radius: 14px;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+
+    .alert-info {
+      background: var(--info-bg);
+      border: 1px solid var(--info-border);
+      color: var(--info-text);
+      padding: 16px 18px;
+      border-radius: 14px;
+      margin: 12px 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px 48px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    code {
+      background: var(--primary-soft);
+      color: var(--primary-dark);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="doc-switcher" role="navigation" aria-label="Alternar documento">
+        <a href="index.html" class="active">Política de Privacidade</a>
+        <a href="termos.html">Termos de Serviço</a>
+      </div>
+      <br />
+      <span class="badge">LGPD • Google Play • Segurança e Privacidade</span>
+      <h1>Política de Privacidade</h1>
+      <p>Aplicativo <strong>RitmoVital — Controle de Remédios</strong></p>
+      <div class="meta-bar">
+        <span><strong>Desenvolvedora:</strong> RBcodex</span>
+        <span><strong>Pacote Android:</strong> com.rafael.controle_remedios</span>
+        <span><strong>Última atualização:</strong> Novembro de 2026</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="quick-nav" aria-label="Navegação rápida">
+      <a href="#dados-lgpd">Dados e LGPD</a>
+      <a href="#permissoes">Permissões</a>
+      <a href="#google-drive">Google Drive e Modo Família</a>
+      <a href="#anuncios-assinaturas">Planos e Anúncios</a>
+      <a href="#exclusao-de-dados">Exclusão de Dados</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <section class="card">
+      <h2>1. Aceitação, Definições e Capacidade</h2>
+      <p>
+        Estes Termos de Uso e Política de Privacidade ("Política") regulam a utilização do aplicativo
+        <strong>RitmoVital</strong> ("Aplicativo"), desenvolvido e disponibilizado por <strong>RBcodex</strong>
+        ("Desenvolvedora"), e descrevem de forma transparente como seus dados são tratados e protegidos.
+      </p>
+      <ul>
+        <li><strong>Dados Pessoais Sensíveis:</strong> informações referentes à rotina de saúde inseridas pelo próprio usuário, como nomes de medicamentos, dosagens, horários, histórico de uso, estoque e fotos opcionais de embalagens (Lei nº 13.709/2018 — LGPD, art. 5º, II).</li>
+        <li><strong>Modo Família:</strong> recurso opcional de sincronização criptografada de dados entre aparelhos de familiares autorizados por você via Google Drive.</li>
+        <li><strong>Cuidador:</strong> pessoa que utiliza o Aplicativo para auxiliar na organização de horários de medicação de terceiros.</li>
+      </ul>
+      <p>
+        O Aplicativo é destinado a maiores de 18 anos plenamente capazes. Menores de idade ou pessoas assistidas somente devem ter rotinas cadastradas sob responsabilidade de seus pais ou representantes legais.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Natureza do Serviço e Aviso Médico Importante</h2>
+      <div class="alert-danger">
+        <strong>Aviso Importante:</strong> O RitmoVital é uma ferramenta digital auxiliar de organização pessoal para lembretes de horários e controle de estoque. O Aplicativo <strong>NÃO realiza diagnósticos, NÃO prescreve medicamentos, NÃO calcula ou altera doses</strong> e não substitui médicos ou farmacêuticos.
+      </div>
+      <ul>
+        <li>Todas as informações cadastradas (nome, concentração, dose, horários e duração) são inseridas ou conferidas pelo próprio Usuário e devem sempre seguir a receita médica e a bula oficial.</li>
+        <li>Nunca inicie, altere ou interrompa um tratamento médico com base apenas no Aplicativo.</li>
+        <li>Em caso de emergência médica ou reação adversa, procure atendimento de saúde imediatamente ou acione o SAMU (192).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>3. Responsabilidades do Usuário</h2>
+      <p>Ao utilizar o RitmoVital, o Usuário compromete-se a:</p>
+      <ul>
+        <li>Conferir atentamente o nome, a dosagem (mg, ml, g, gotas), o estoque e os horários antes de salvar cada medicamento, inclusive após o uso da leitura automática por câmera (OCR);</li>
+        <li>Manter seu aparelho protegido por bloqueio de tela e compartilhar o QR Code/código do Modo Família exclusivamente com familiares de estrita confiança;</li>
+        <li>Possuir autorização legítima caso organize medicamentos de familiares ou dependentes.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="dados-lgpd">
+      <h2>4. Dados Coletados, Finalidades e Armazenamento Local (LGPD)</h2>
+      <p>
+        <strong>Arquitetura sem servidor próprio (Local-First):</strong> A RBcodex <strong>não possui nem opera servidores próprios</strong> para coletar ou armazenar sua lista de medicamentos ou histórico clínico. Por padrão, todos os medicamentos, horários, fotos e registros ficam salvos <strong>exclusivamente no armazenamento interno criptografado do seu próprio celular</strong>.
+      </p>
+      <ul>
+        <li><strong>Dados inseridos localmente por você:</strong> medicamentos, dosagens, horários, saldo de estoque, histórico de doses tomadas, nomes de perfis locais e fotos opcionais de caixas.</li>
+        <li><strong>Dados de Conta Google (apenas se você ativar Nuvem/Família):</strong> nome de exibição, endereço de e-mail e foto de perfil fornecidos pelo login oficial do Google exclusivamente para autenticar seu próprio Google Drive.</li>
+        <li><strong>Identificadores técnicos de publicidade (apenas no plano Gratuito):</strong> o SDK do Google AdMob utiliza identificadores padrão de publicidade do Android para exibição e medição de anúncios e prevenção a fraudes.</li>
+      </ul>
+      <p>
+        <strong>Proibição de venda ou uso comercial de dados de saúde:</strong> Seus dados de medicamentos e saúde <strong>jamais</strong> são vendidos, alugados ou compartilhados com anunciantes, farmácias, seguradoras, planos de saúde ou corretores de dados (LGPD, art. 11, §4º).
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>5. Leitura Automática de Embalagens (Câmera / OCR)</h2>
+      <p>
+        O recurso de leitura de caixas utiliza processamento local no dispositivo (reconhecimento óptico de caracteres) para sugerir o nome e a dosagem do medicamento. As fotos tiradas não são enviadas para servidores da Desenvolvedora. Como reflexos ou fontes gráficas podem gerar imprecisões, o usuário deve sempre revisar os campos antes de salvar.
+      </p>
+    </section>
+
+    <section class="card" id="permissoes">
+      <h2>6. Permissões do Dispositivo Android</h2>
+      <p>O Aplicativo solicita apenas permissões estritamente ligadas às funcionalidades escolhidas pelo usuário:</p>
+      <ul>
+        <li><strong>Câmera (<code>CAMERA</code>):</strong> opcional, usada somente para fotografar a caixa do medicamento ou escanear o QR Code de convite do Modo Família.</li>
+        <li><strong>Notificações e Alarmes Exatos (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>):</strong> essenciais para tocar os lembretes pontualmente no horário programado da dose.</li>
+        <li><strong>Intent de Tela Cheia (<code>USE_FULL_SCREEN_INTENT</code>):</strong> usada exclusivamente pela função de despertador/alarme de medicamentos para despertar a tela bloqueada no horário exato da dose.</li>
+        <li><strong>Inicialização e Bateria (<code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code>, <code>VIBRATE</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>):</strong> reagendar seus alarmes automaticamente quando o celular é reiniciado e evitar que o sistema silencie o despertador.</li>
+        <li><strong>Internet (<code>INTERNET</code>):</strong> usada para validação de assinaturas via Google Play, exibição de anúncios no plano Gratuito e sincronização opcional com o Google Drive.</li>
+      </ul>
+    </section>
+
+    <section class="card" id="google-drive">
+      <h2>7. Google Drive, Backup em Nuvem e Modo Família (Uso Limitado das APIs Google)</h2>
+      <p>
+        Os recursos de Backup Automático na Nuvem (disponível nos planos Individual Plus, Família e Família Pro) e de Sincronização do Modo Família são <strong>opcionais</strong> e só são ativados mediante login explícito do Usuário com sua Conta Google.
+      </p>
+      <ul>
+        <li><strong>Backup Pessoal Criptografado:</strong> antes de sair do aparelho, os dados são criptografados com padrão forte <strong>AES-256-GCM</strong> e salvos na pasta privada da própria conta Google Drive do usuário. A Desenvolvedora não tem acesso à sua conta nem às suas chaves.</li>
+        <li><strong>Modo Família via QR Code:</strong> cria no Google Drive do administrador do grupo um arquivo criptografado de ponta a ponta (AES-256-GCM) contendo apenas os perfis marcados como compartilhados. A chave criptográfica é transmitida diretamente via QR Code/código de convite aos familiares autorizados. Perfis pessoais permanecem isolados e privados.</li>
+      </ul>
+      <div class="alert-info">
+        <strong>Conformidade com a Política do Google (Limited Use):</strong> O uso e a transferência de informações recebidas das APIs do Google pelo RitmoVital respeitam integralmente a <em>Google API Services User Data Policy</em>, incluindo os requisitos de <strong>Uso Limitado (Limited Use)</strong>. O acesso ao Google Drive é utilizado única e exclusivamente para gravar, ler e sincronizar os arquivos criptografados de backup e do grupo familiar solicitados pelo próprio usuário.
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>8. Notificações, Alarmes e Limitações do Sistema Operacional</h2>
+      <p>
+        Embora o RitmoVital empregue recursos nativos de alarme exato, restrições severas de bateria impostas por fabricantes de celulares, modo "Não Perturbe", aparelho desligado ou revogação de permissões podem afetar alertas. Mantenha as permissões recomendadas ativas e utilize meios adicionais de acompanhamento em tratamentos críticos.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Segurança da Informação</h2>
+      <p>
+        Adotamos criptografia em repouso apoiada pelo Android Keystore no armazenamento local, criptografia autenticada <strong>AES-256-GCM</strong> em todos os backups em nuvem e arquivos do Modo Família, e tráfego exclusivamente seguro via HTTPS/TLS.
+      </p>
+    </section>
+
+    <section class="card" id="exclusao-de-dados">
+      <h2>10. Retenção e Como Excluir Seus Dados Passo a Passo</h2>
+      <p>
+        Você possui controle total e imediato sobre seus dados a qualquer momento, sem precisar aguardar aprovação externa, pois a RBcodex não retém cópias em servidores próprios:
+      </p>
+      <ul>
+        <li><strong>Excluir medicamentos, perfis ou histórico no app:</strong> abra o RitmoVital, acesse a aba <em>Remédios</em> ou o menu lateral e exclua qualquer item individualmente ou em lote.</li>
+        <li><strong>Apagar todos os dados locais do aparelho:</strong> desinstale o aplicativo ou acesse <em>Configurações do Android → Aplicativos → RitmoVital → Armazenamento → Limpar dados</em>. Todos os registros locais serão permanentemente eliminados.</li>
+        <li><strong>Desvincular e excluir backups do Google Drive:</strong> no menu do aplicativo, toque em <em>Google Drive → Desconectar Conta</em> (ou <em>Família → Desconectar deste Grupo</em>). Para remover definitivamente arquivos salvos na sua nuvem, acesse seu <em>Google Drive → Configurações → Gerenciar aplicativos → RitmoVital → Excluir dados ocultos do aplicativo</em> e remova eventual arquivo compartilhado na sua unidade do Drive.</li>
+        <li><strong>Revogar acesso da Conta Google:</strong> você pode revogar a permissão a qualquer instante em <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">myaccount.google.com/permissions</a>.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>11. Direitos do Titular (LGPD, art. 18) e Crianças/Adolescentes</h2>
+      <p>
+        Nos termos da Lei Geral de Proteção de Dados (Lei nº 13.709/2018), são assegurados a você os direitos de acesso, correção, portabilidade (via exportação de backup no app), eliminação e revogação gratuita do consentimento.
+      </p>
+      <p>
+        <strong>Público-alvo:</strong> O RitmoVital não é direcionado a crianças menores de 13 anos. Eventual cadastro de rotinas de dependentes menores deve ser operado diretamente por um dos pais ou responsável legal (LGPD, art. 14).
+      </p>
+    </section>
+
+    <section class="card" id="anuncios-assinaturas">
+      <h2>12. Planos, Assinaturas (Google Play) e Anúncios (Google AdMob)</h2>
+      <ul>
+        <li><strong>Assinaturas e compras no app:</strong> os planos pagos (<em>Individual Plus</em>, <em>Família</em>, <em>Família Pro</em> e pacotes adicionais de vagas) são processados, faturados e gerenciados exclusivamente pelo sistema oficial de faturamento da <strong>Google Play Store</strong>. A RBcodex não coleta nem armazena números de cartão de crédito ou dados bancários.</li>
+        <li><strong>Cancelamento fácil:</strong> assinaturas possuem renovação automática conforme o período escolhido (mensal ou anual) e podem ser canceladas a qualquer momento pelo usuário em <em>Google Play Store → Pagamentos e assinaturas → Assinaturas</em>.</li>
+        <li><strong>Anúncios no plano Gratuito:</strong> a versão gratuita exibe anúncios fornecidos pelo <strong>Google AdMob</strong> (banners discretos, anúncios ao cadastrar e no leitor de embalagem). Nenhum nome de medicamento ou dado de saúde é enviado para personalização de anúncios, e nenhum anúncio é exibido na tela de despertar do alarme. Assinantes dos planos pagos utilizam o app sem anúncios.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>13. Alterações desta Política, Lei Aplicável e Foro</h2>
+      <p>
+        Esta Política poderá ser atualizada para refletir melhorias do aplicativo ou exigências legais, sempre mantendo a versão vigente publicada neste endereço e dentro do próprio Aplicativo (menu <em>Termos e Privacidade</em>).
+      </p>
+      <p>
+        Este documento é regido pelas leis da República Federativa do Brasil, ficando assegurado o foro do domicílio do consumidor nos termos do Código de Defesa do Consumidor e do Marco Civil da Internet.
+      </p>
+    </section>
+
+    <section class="card" id="contato">
+      <h2>14. Contato e Suporte sobre Privacidade</h2>
+      <p>
+        Em caso de dúvidas, solicitações relacionadas à LGPD ou suporte técnico sobre o aplicativo <strong>RitmoVital</strong>, entre em contato com o responsável pelo tratamento / desenvolvedora (<strong>RBcodex</strong>):
+      </p>
+      <ul>
+        <li><strong>Responsável / Desenvolvedora:</strong> RBcodex</li>
+        <li><strong>Canal oficial de atendimento:</strong> e-mail de suporte disponibilizado na página oficial do aplicativo <strong>RitmoVital</strong> na Google Play Store.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html" style="color: var(--primary-dark); font-weight: 600; text-decoration: none;">Política de Privacidade</a> &bull;
+      <a href="termos.html" style="color: var(--primary-dark); font-weight: 600; text-decoration: none;">Termos de Serviço</a>
+    </p>
+    &copy; 2026 RBcodex — RitmoVital (Controle de Remédios). Todos os direitos reservados.
+  </footer>
+</body>
+</html>
