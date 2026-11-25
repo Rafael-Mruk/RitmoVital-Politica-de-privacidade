@@ -68,6 +68,31 @@
       margin: 0 auto;
     }
 
+    .doc-switcher {
+      display: inline-flex;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 5px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+
+    .doc-switcher a {
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 999px;
+      opacity: 0.85;
+    }
+
+    .doc-switcher a.active {
+      background: #FFFFFF;
+      color: #004D40;
+      opacity: 1;
+    }
+
     .badge {
       display: inline-block;
       background: rgba(255, 255, 255, 0.16);
@@ -223,8 +248,13 @@
 <body>
   <header>
     <div class="header-inner">
+      <div class="doc-switcher" role="navigation" aria-label="Alternar documento">
+        <a href="index.html" class="active">Política de Privacidade</a>
+        <a href="termos.html">Termos de Serviço</a>
+      </div>
+      <br />
       <span class="badge">LGPD • Google Play • Segurança e Privacidade</span>
-      <h1>Política de Privacidade e Termos de Uso</h1>
+      <h1>Política de Privacidade</h1>
       <p>Aplicativo <strong>RitmoVital — Controle de Remédios</strong></p>
       <div class="meta-bar">
         <span><strong>Desenvolvedora:</strong> RBcodex</span>
@@ -400,6 +430,10 @@
   </main>
 
   <footer>
+    <p>
+      <a href="index.html" style="color: var(--primary-dark); font-weight: 600; text-decoration: none;">Política de Privacidade</a> &bull;
+      <a href="termos.html" style="color: var(--primary-dark); font-weight: 600; text-decoration: none;">Termos de Serviço</a>
+    </p>
     &copy; 2026 RBcodex — RitmoVital (Controle de Remédios). Todos os direitos reservados.
   </footer>
 </body>
